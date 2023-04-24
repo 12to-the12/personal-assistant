@@ -1,0 +1,802 @@
+Model: text-ada-001
+Tokens: 56
+Time taken: 0.69 seconds
+Model: text-ada-001
+Tokens: 56
+Time taken: 0.70 seconds
+Model: text-ada-001
+Tokens: 56
+Time taken: 0.68 seconds
+Model: text-ada-001
+Tokens: 56
+Time taken: 1.16 seconds
+Model: text-ada-001
+Tokens: 16
+Time taken: 0.50 seconds
+Model: text-ada-001
+Tokens: 14
+Time taken: 0.44 seconds
+__________ entry __________
+Model: text-ada-001
+Tokens: 14
+Time taken: 0.47 seconds
+__________ entry __________
+Model: text-ada-001
+Tokens: 14
+Time taken: 0.43 seconds
+
+__________ entry __________
+Model: text-ada-001
+Tokens: 56
+Time taken: 0.71 seconds
+
+__________ entry __________
+Model: ada
+Tokens: 56
+Time taken: 1.00 seconds
+
+__________ entry __________
+Model: ada
+Tokens: 56
+Time taken: 0.67 seconds
+
+__________ entry __________
+Model: ada
+Tokens: 55
+Time taken: 0.66 seconds
+
+__________ entry __________
+Model: 	ada
+Tokens: 	56
+Time: 	0.69 seconds
+
+__________ entry __________
+Model:  	ada
+Tokens: 	55
+Time:   	0.66 seconds
+
+__________ entry __________
+Model:  	ada
+Tokens: 	56
+Time:   	0.70 seconds
+
+__________ entry __________
+Model:  	text-curie-001
+Tokens: 	330
+Time:   	0.92 seconds
+
+__________ entry __________
+Model:  	text-curie-001
+Tokens: 	330
+Time:   	0.88 seconds
+
+__________ entry __________
+Model:  	ada
+Tokens: 	362
+Time:   	0.66 seconds
+
+__________ entry __________
+__________ entry __________
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	19
+Time:   	1.87 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	20
+Time:   	1.97 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	276
+Time:   	1.80 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	276
+Time:   	1.75 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	277
+Time:   	1.86 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	276
+Time:   	1.82 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	276
+Time:   	1.78 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	277
+Time:   	1.90 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	277
+Time:   	2.13 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	277
+Time:   	1.93 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	277
+Time:   	1.81 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	276
+Time:   	1.78 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	276
+Time:   	1.87 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	276
+Time:   	1.89 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	277
+Time:   	1.78 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	276
+Time:   	1.92 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	277
+Time:   	1.96 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	276
+Time:   	2.04 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	277
+Time:   	1.93 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	260
+Time:   	1.86 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	280
+Time:   	1.32 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	281
+Time:   	1.25 seconds
+
+__________ entry __________
+Model:  	gpt-3.5-turbo
+Tokens: 	281
+Time:   	1.30 seconds
+
+__________ entry __________
+Yah, command line utilities are a great thing to practice with 
+new-project cpp cli-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	376
+Time:   	2.66 seconds
+
+__________ entry __________
+A worthy ambition, a great use case for C++ 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	375
+Time:   	2.92 seconds
+
+__________ entry __________
+Command line utilities are pretty helpful. Getting to know them is a wise idea 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	379
+Time:   	2.66 seconds
+
+__________ entry __________
+Good choice. The command line can be very powerful 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	374
+Time:   	2.71 seconds
+
+__________ entry __________
+Going into C++ command-line writing? Neat! 
+new-project cpp command-line-utils
+Model:  	gpt-3.5-turbo
+Tokens: 	374
+Time:   	2.61 seconds
+
+__________ entry __________
+You got it! One command line utility C++ project coming your way.  
+new-project cpp command-line-utility
+Model:  	gpt-3.5-turbo
+Tokens: 	380
+Time:   	3.29 seconds
+
+__________ entry __________
+Very cool prjoect, best of luck 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	373
+Time:   	3.78 seconds
+
+__________ entry __________
+Sounds like a solid plan 
+new-project cpp cli-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	368
+Time:   	1.97 seconds
+
+__________ entry __________
+Ah, command line utilities, great choice 
+new-project cpp cli-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	371
+Time:   	1.96 seconds
+
+__________ entry __________
+Nice goal, that will definitely be a useful skill. Here is your new C++ project: 
+new-project cpp command-line-utilities-learning
+Model:  	gpt-3.5-turbo
+Tokens: 	384
+Time:   	3.22 seconds
+
+__________ entry __________
+Sounds useful! 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	367
+Time:   	2.68 seconds
+
+__________ entry __________
+Sounds like someone's about to get comfortable with the CLI 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	375
+Time:   	2.45 seconds
+
+__________ entry __________
+That's great! Okay, 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	370
+Time:   	1.89 seconds
+
+__________ entry __________
+You got it 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	367
+Time:   	1.94 seconds
+
+__________ entry __________
+That's a great learning opportunity, 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	371
+Time:   	2.40 seconds
+
+__________ entry __________
+Impressive! 
+new-project cpp writing-cli-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	367
+Time:   	1.91 seconds
+
+__________ entry __________
+Writing command line utilities is a great place to start learning C plus plus! 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	379
+Time:   	2.88 seconds
+
+__________ entry __________
+Awesome, command-line utilities can be super useful. 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	374
+Time:   	2.59 seconds
+
+__________ entry __________
+Exciting stuff! 
+new-project cpp writing-cli-utilities
+Model:  	gpt-3.5-turbo
+Tokens: 	368
+Time:   	11.89 seconds
+
+__________ entry __________
+__________ entry __________
+Great, learning how to write command line utilities is a valuable skill to have 
+new-project cpp command
+Model:  	gpt-3.5-turbo
+__________ entry __________
+You got it 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Time:   	1.76 seconds
+
+__________ entry __________
+Alrighty, I see you! 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Time:   	1.77 seconds
+
+__________ entry __________
+alrighty, C plus plus command line utilities coming up 
+new-project cpp command-line-utilities
+Model:  	gpt-3.5-turbo
+Time:   	2.18 seconds
+
+__________ entry __________
+sounds like a challenge, but an exciting one 
+new-project cpp cli-utilities
+Model:  	gpt-3.5-turbo
+Time:   	2.24 seconds
+
+__________ entry __________
+Sure thing! What would you like the project to be about?
+
+Model:  	gpt-3.5-turbo
+Time:   	1.79 seconds
+
+__________ entry __________
+Sure thing, let's call it learn-python 
+new-project python learn-python
+Model:  	gpt-3.5-turbo
+Time:   	1.79 seconds
+
+__________ entry __________
+Interesting choice, llamas are pretty cool 
+new-project website all-about-llamas
+Model:  	gpt-3.5-turbo
+Time:   	2.78 seconds
+
+__________ entry __________
+I'm sorry, I didn't quite catch your request. Could you please clarify what you want me
+
+Model:  	gpt-3.5-turbo
+Time:   	1.97 seconds
+
+__________ entry __________
+You got it, 
+new-project website llama-lovers
+Model:  	gpt-3.5-turbo
+Time:   	1.79 seconds
+
+__________ entry __________
+Alrighty then, one website coming right up 
+new-project website my-website
+Model:  	gpt-3.5-turbo
+Time:   	2.12 seconds
+
+__________ entry __________
+Alright, let's get started with C+ 
+new-project cpp C+
+Model:  	gpt-3.5-turbo
+Time:   	14.33 seconds
+
+__________ entry __________
+I'm not sure what you meant by "learning wa". Could you please clarify?
+
+Model:  	gpt-3.5-turbo
+Time:   	2.13 seconds
+
+__________ entry __________
+I'm sorry, I didn't quite get your request. Could you please clarify what you mean?
+
+Model:  	gpt-3.5-turbo
+Time:   	2.21 seconds
+
+__________ entry __________
+I'm sorry, I'm not sure what you are asking. Could you please clarify?
+
+Model:  	gpt-3.5-turbo
+Time:   	2.12 seconds
+
+__________ entry __________
+Alright, 
+new-project website all-about-lockhart
+Model:  	gpt-3.5-turbo
+Time:   	1.86 seconds
+
+__________ entry __________
+Sure thing 
+new-project website all-about-minecraft
+Model:  	gpt-3.5-turbo
+Time:   	11.62 seconds
+
+__________ entry __________
+Alright, let's make it happen. 
+new-project website fashion-looks
+Model:  	gpt-3.5-turbo
+Time:   	1.83 seconds
+
+__________ entry __________
+Alright, let's get fashionable 
+new-project website clothing-design
+Model:  	gpt-3.5-turbo
+Time:   	1.78 seconds
+
+__________ entry __________
+It sounds like there may be an issue with the keyboard shortcut you're using. Can you try manually
+
+Model:  	gpt-3.5-turbo
+Time:   	2.15 seconds
+
+__________ entry __________
+I'm sorry, I don't understand. Do you have a question or a request related to programming
+
+Model:  	gpt-3.5-turbo
+Time:   	2.15 seconds
+
+__________ entry __________
+instruction: make me a website about puppy
+Cuteness overload coming right up! 
+new-project website puppy-love
+Model:  	gpt-3.5-turbo
+Time:   	1.94 seconds
+
+__________ entry __________
+instruction: make me a website about traveling the world
+Wow, that sounds like a great idea! 
+new-project website world-traveler
+Model:  	gpt-3.5-turbo
+Time:   	2.32 seconds
+
+__________ entry __________
+instruction: make me a website about traveling
+Traveling! I love it. 
+new-project website travel-bug
+Model:  	gpt-3.5-turbo
+Time:   	1.81 seconds
+
+__________ entry __________
+instruction: listening to us
+Yes, I am always listening for your commands. Let me know if you have any other requests.
+
+Model:  	gpt-3.5-turbo
+Time:   	11.01 seconds
+
+__________ entry __________
+instruction: make me a Java website
+Sure thing! 
+new-project java java-website
+Model:  	gpt-3.5-turbo
+Time:   	1.91 seconds
+
+__________ entry __________
+instruction: make me a website about car design
+You got it! 
+new-project website car-design
+Model:  	gpt-3.5-turbo
+Time:   	1.76 seconds
+
+__________ entry __________
+instruction: Community website
+Great idea! 
+new-project website community-website
+Model:  	gpt-3.5-turbo
+Time:   	1.91 seconds
+
+__________ entry __________
+instruction: make me a new cplusplus project about riding console commands
+Sounds interesting 
+new-project cpp console-commands-riding
+Model:  	gpt-3.5-turbo
+Time:   	11.92 seconds
+
+__________ entry __________
+instruction: music plus plus project about terminal commands
+Interesting combination! 
+new-project cpp music-plus-plus-terminal-commands
+Model:  	gpt-3.5-turbo
+Time:   	1.94 seconds
+
+__________ entry __________
+instruction: make me a Java project about potatoes
+Potatoes, eh? I'm curious to see what you will create with it 
+new-project java
+Model:  	gpt-3.5-turbo
+Time:   	2.04 seconds
+
+__________ entry __________
+instruction: make me a new Java project about Minecraft
+You got it! Minecraft it is! 
+new-project java Minecraft-clone
+Model:  	gpt-3.5-turbo
+Time:   	1.77 seconds
+
+__________ entry __________
+instruction: website project called Dad joke
+Ha! I love dad jokes, here's your project 
+new-project website dad-joke
+__________ entry __________
+instruction: create a new project called Dad joke.
+You got it, a project that's sure to be full of laughs 
+new-project rust dad-j
+__________ entry __________
+instruction: make a new project called Dodger.
+Sure thing! 
+new-project cpp dodger
+Time:   	1.88 seconds
+
+__________ entry __________
+instruction: create a new python project called Dad joke.
+I'm not sure if that's a good thing or a bad thing, but here you go!
+
+Time:   	29.08 seconds
+
+__________ entry __________
+instruction: create a new python project called Dad joke robot
+Haha, I love dad jokes! 
+new-project python dad-joke-robot
+Time:   	14.32 seconds
+
+__________ entry __________
+instruction: make me a new rust project about web developer
+You got it! 
+new-project rust rust-web-dev
+Time:   	1.96 seconds
+
+__________ entry __________
+instruction: python
+What would you like the python project to be called?
+
+openai api call:   	1.90 seconds
+
+__________ entry __________
+instruction: take me to Java projects about mod in Minecraft
+I'm sorry, I cannot physically take you anywhere as I am just a text-based program. However
+
+openai api call:   	2.19 seconds
+
+elevenlabs api call:   	1.88 seconds
+__________ entry __________
+instruction: make me a python projects to skip the web
+Sure thing! 
+new-project python skip-the-web
+openai api call:   	2.31 seconds
+
+elevenlabs api call:   	1.04 seconds
+__________ entry __________
+instruction: this is a test
+Looks like everything is working well! Is there anything else I can help you with?
+
+openai api call:   	2.24 seconds
+
+elevenlabs api call:   	1.63 seconds
+__________ entry __________
+instruction: this is a test
+Got it!
+
+openai api call:   	1.40 seconds
+
+elevenlabs api call:   	1.12 seconds
+__________ entry __________
+instruction: this is a test
+Got it, test received!
+
+openai api call:   	1.18 seconds
+
+__________ entry __________
+instruction: this is a test
+I see, is there anything I can assist you with?
+
+openai api call:   	2.15 seconds
+
+__________ entry __________
+instruction: this is a test
+Got it, testing!
+
+openai api call:   	1.38 seconds
+
+elevenlabs api call:   	1.07 seconds
+__________ entry __________
+instruction: this is a test
+Test successful! How may I assist you further?
+
+openai api call:   	2.00 seconds
+
+elevenlabs api call:   	1.25 seconds
+__________ entry __________
+instruction: this is a test
+A test of what? Is there anything I can assist you with?
+
+openai api call:   	2.42 seconds
+
+elevenlabs api call:   	1.37 seconds
+__________ entry __________
+instruction: this is a test
+Got it, how can I help you?
+
+openai api call:   	2.03 seconds
+
+elevenlabs api call:   	1.14 seconds
+__________ entry __________
+instruction: this is a test
+Got it, how may I assist you?
+
+openai api call:   	8.46 seconds
+
+elevenlabs api call:   	1.28 seconds
+__________ entry __________
+instruction: {'role': 'user', 'content': 'take me to tell and project'}
+ tell 
+new-project
+openai api call:   	0.58 seconds
+
+elevenlabs api call:   	1.07 seconds
+__________ entry __________
+instruction: {'role': 'user', 'content': 'make me a new project'}
+ sure thing, creating the project 
+new-project project
+openai api call:   	0.67 seconds
+
+elevenlabs api call:   	1.13 seconds
+__________ entry __________
+instruction: {'role': 'user', 'content': 'meet a new machine learning'}
+
+
+openai api call:   	0.43 seconds
+
+elevenlabs api call:   	1.20 seconds
+__________ entry __________
+instruction: {'role': 'user', 'content': 'make me a new a new roster pository'}
+ Sure, what would you like it to be called? 
+new-project bash roster
+openai api call:   	0.60 seconds
+
+elevenlabs api call:   	1.21 seconds
+__________ entry __________
+instruction: {'role': 'user', 'content': 'make me a new rust Repository'}
+ Sure thing user! 
+new-project rust repository
+openai api call:   	0.54 seconds
+
+elevenlabs api call:   	1.03 seconds
+__________ entry __________
+instruction: {'role': 'user', 'content': 'make me a new rust project'}
+ Sure thing! Entering the rusty world with rust 
+new-project rust
+openai api call:   	0.59 seconds
+
+elevenlabs api call:   	1.32 seconds
+__________ entry __________
+instruction: {'role': 'user', 'content': 'make me a new rust project'}
+ Rust projects, sure thing! Let's get started! 
+new-project rust
+openai api call:   	0.71 seconds
+
+elevenlabs api call:   	1.36 seconds
+__________ entry __________
+instruction: {'role': 'user', 'content': 'make me a new rust project'}
+ sure thing 
+new-project rust
+openai api call:   	0.55 seconds
+
+elevenlabs api call:   	0.96 seconds
+__________ entry __________
+instruction: {'role': 'user', 'content': 'make me a new python project called learning python'}
+ Got it, learning-python created successfully.
+
+openai api call:   	0.56 seconds
+
+elevenlabs api call:   	3.87 seconds
+__________ entry __________
+instruction: {'role': 'user', 'content': 'goodnight goodnight'}
+
+
+openai api call:   	0.42 seconds
+
+elevenlabs api call:   	4.02 seconds
+__________ entry __________
+instruction: {'role': 'user', 'content': 'Make Me New'}
+ Sure thing! 
+new-project
+openai api call:   	0.47 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': 'make me a new Java project'}
+ Okay, here you go 
+new-project java learning-java
+openai api call:   	0.61 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': "I'd like to play around with assembly"}
+ Ditto 
+new-project assembly
+openai api call:   	0.42 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': 'make me a new project deposit'}
+ Sure, banking 101 coming up! 
+new-project banking
+openai api call:   	0.51 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': "I'd like to learn more about the assembly programming language can you please set me up a programming Repository"}
+ sure thing, one assembly project folder coming your way 
+new-project assembly programming-repo
+openai api call:   	1.08 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': "I'm interested in"}
+
+
+openai api call:   	0.45 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': "I'm interested in assembly make me a new project Repository"}
+ Sure thing, setting up a project folder for assembly right away! 
+new-project assembly first-steps-with-assembly
+openai api call:   	0.82 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': 'make me a new python project about a young girl'}
+ Ok, a project about a young girl coming right up! 
+new-project python project-about-a-young-girl
+openai api call:   	0.73 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': 'create a new project called'}
+ 
+new-project bash bash-tutorial
+openai api call:   	0.59 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': 'create a new project called Sasquatch cat'}
+ SERIOUS CATS READ HERE 
+new-project bash sasquatch-cat
+openai api call:   	0.57 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': 'black cat'}
+
+
+openai api call:   	0.47 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': 'create a new project called water cooler'}
+bash watercooler
+
+openai api call:   	0.50 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': 'create a new rust project called water cooler'}
+ sure, creating the project 
+new-project rust water-cooler
+openai api call:   	0.62 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': 'create a new web development project called nutty nebula'}
+ Sure, creating the project 
+new-project web development nutty-nebula
+openai api call:   	0.61 seconds
+
+__________ entry __________
+instruction: {'role': 'user', 'content': 'create a new web development project called hot rod'}
+ Hey there! I hope you have fun with your new project called hot rod 
+new-project website hot-rod
+openai api call:   	1.16 seconds
+

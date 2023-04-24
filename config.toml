@@ -1,0 +1,24 @@
+dotenv_path = "/home/logan/software-development/keys/.env"
+# model = "gpt-3.5-turbo"
+# model = "gpt-4"
+# CHAT = true
+model = "text-curie-001"
+# model = "ada"
+max_tokens = 50
+temperature = 1  # 0 - 2
+
+# voice_id = "EXAVITQu4vr4xnSDxMaL"
+
+# voice = "Paul Bettany"
+
+voice = "Rachel"
+rounds = 50
+
+# davinci
+# text-curie-001
+# text-babbage-001
+# text-ada-001
+# davinci
+# curie
+# babbage
+# ada

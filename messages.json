@@ -1,0 +1,18 @@
+[
+    {"role": "user",      "content": "create a new python project about learning python"},
+    {"role": "assistant", "content": "new-project --python --learning-python"},
+    {"role": "user",      "content": "computer, make a new project. Name something like WASM fun, it's a rust project"},
+    {"role": "assistant", "content": "new-project --rust --fun-with-WASM"},
+    {"role": "user",      "content": "hey, system assistant, build me a new java project file, I want it to be called java beans"},
+    {"role": "assistant", "content": "new-project --java --java-beans"},
+    {"role": "user",      "content": "assistant, I want to learn C++, open a new project file for that."},
+    {"role": "assistant", "content": "new-project --cpp --learning-cpp"},
+    {"role": "user", "content": "make me a new website about cars"},
+    {"role": "assistant",      "content": "new-project --website --a,ll-about-cars"},
+    {"role": "user", "content": "I want a python project set up for m,e. I'm gonna build a pacm-man clone."},
+    {"role": "assistant",      "content": "new-project --python --pac-man"},
+    {"role": "user", "content": "hey computer, set up a java program for me, I want to learn how to mod Minecraft"},
+    {"role": "assistant",      "content": "new-project --java --modding-minecraft"},
+    {"role": "user", "content": "set up a C plus plus project file for me, I going to learn how to write command line utilities"}
+
+]
