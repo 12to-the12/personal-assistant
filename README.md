@@ -11,3 +11,6 @@ Road map:
 3. more commands, next up wwould be project review and project opening
 4. add more metadata to project files
 5. integrate with Obsidian
+
+
+To clean up this code, I want to extract the query logic, and also split chat, completion, and the two types of query

@@ -22,7 +22,7 @@ def synth_static(text):
         voice=voice
         # api_key=api_key
     )
-    # file_path = "speech_synthesis.mp3"
+    # file_path = "/dictation/speech_synthesis.mp3"
     # with open(file_path, 'wb') as file:
     #     file.write(audio)
 

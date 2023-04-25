@@ -41,7 +41,7 @@ messages = [
 ]
 
 base_prompt = \
-"""the assistant is witty, helpful, and knowledgeable
+    """the assistant is witty, helpful, and knowledgeable
 valid values for project_type: python, rust, java, website, cpp, bash, assembly
 
 the new-project command will not work with other project types
@@ -84,11 +84,11 @@ response: Java project. Here you go $new-project java baby-steps-with-java
 
 
 def query(instruction):
-    
+
     messages.append(instruction)
 
     # print(messages)
-    if config["model"]=="gpt-3.5-turbo" or config["model"]=="gpt-4":
+    if config["model"] == "gpt-3.5-turbo" or config["model"] == "gpt-4":
         response = openai.ChatCompletion.create(
             model=config["model"],
             messages=messages,
@@ -98,14 +98,9 @@ def query(instruction):
         # print(response)
         message = response.choices[0].message.content
     else:
-        # prompt = ""
-        # for message in messages:
-        #   
-        global prompt  
-        prompt = base_prompt + instruction["role"]+": "+instruction["content"]+'\n'+"response: "
-        # print("prompt: __________")
-        # print(prompt)
-        # print("__________")
+        global prompt
+        prompt = base_prompt + instruction["role"] + \
+            ": "+instruction["content"]+'\n'+"response: "
         response = openai.Completion.create(
             engine=config["model"],
             prompt=prompt,
@@ -113,19 +108,26 @@ def query(instruction):
             max_tokens=config["max_tokens"],
             stop="\n"
         )
-        # print(response)
-        
         message = response.choices[0].text
-    
-        print(message)
-        try: message = message.split(':')[1]
-        except: pass
+        try:
+            message = message.split(':')[1]
+        except:
+            pass
     try:
         speech, command = message.split('$')
     except:
         speech,  command = message, ""
     return [speech, command]
 
+# def query_openai(prompt):
+#     if config["chat"]:
+#         return query_chat(prompt)
+
+# def query_chat():
+#     pass
+
+# def query_completion(prompt):
+#     pass
 
 
 if __name__ == "__main__":

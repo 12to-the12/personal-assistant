@@ -1,33 +1,21 @@
+print("startup")
+from spin_off import spin_off
+from recognition import adjust_noise, record, recognize
+from query import query
+import time
+import os
+import openai
+import json
+from voice_synth import synth
+import toml
 from play import play
 # startmp3 = play("start.mp3", asyncronous=True)
-print("startup")
-import toml
-from voice_synth import synth
-import json
-import openai
-import os
-import time
-from query import query
-from recognition import adjust_noise, record, recognize
-from spin_off import spin_off
+
 
 with open('config.toml') as f:
     config = toml.load(f)
 
 
-
-
-
-
-
-
-
-
-
-
-
-# with open('ambient.txt', 'r') as f:
-#     ambient = int(f.readline().strip())
 
 print("adjusting for noise...")
 adjust_noise()
@@ -69,6 +57,8 @@ def command_validator(command):  # returns pass
         # print(f"a proper command should use a valid project type, not {command[1]}")
         return False
     return True
+
+
 print("running command...")
 if command_validator(command):
     os.system(command)
@@ -86,7 +76,10 @@ log("")
 
 print(f"wow, that took: {end_time - start_time:.2f} seconds\n")
 print("how do I say this...")
-spin_off( synth(flavor) )
+
+
+spin_off(flavor)
+spin_off(synth(flavor))
 
 # play("speech_synthesis.mp3")
 time.sleep(3)
