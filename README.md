@@ -17,10 +17,37 @@ Road map:
 
 
 
+# Overview
+The project runs the command 
+```new-project```
+with the arguments project_type and project_name
 
-# How to use
-*you need to install python3.9 to use this, dependency issue*
+the script is not included, the instruction_formation controls how the command is generated
+the implementation is very machine specific, so maybe ewrite your own
 
-in the config.toml set the dotenv_path to your .env containing your enviroment variables
 
-you need "OPENAI_API_KEY"
+
+# Keep in Mind
+make sure to activate the virtual enviroment with 
+```source venv/bin/activate```
+you can deactivate it with
+```deactivate```
+
+# Instructions
+
+
+rename ".env-template to ".env"
+fill in your openai api key in ".env"
+
+run
+```./build_venv```
+in the project directory to automatically build the virtual enviroment
+
+
+# Troubleshooting
+on a mac run
+```
+brew install portaudio
+pip install pyaudio
+```
+in the virtual enviroment to get pyaudio working

@@ -3,22 +3,24 @@ import speech_recognition as sr
 # import sys
 import os
 # import warnings
-# import contextlib
-# import io
+import contextlib
+import io
 import time
-# from play import play
+from play import play
 # import pydub
 import time
-import whisper
 
 from config import config
 
 
 
-print('loading model...')
-model_name = config["recognition_model"]
-model = whisper.load_model(model_name)
-print('model loaded...')
+
+if config["local_transcription"]:
+    print('loading model...')
+    model_name = config["recognition_model"]
+    import whisper
+    model = whisper.load_model(model_name)
+    print('model loaded...')
 # # Define a filter that matches all warnings
 # warnings.filterwarnings('ignore', category=Warning)
 
@@ -86,23 +88,20 @@ def record():
     
 
 
-def recognize_audio():
+def recognize_audio(audio=None):
     try:
-        # start = time.time()
-        # with contextlib.redirect_stdout(io.StringIO()):
-        #     value = r.recognize_google(audio)
-        # end = time.time()
-
-        # print(f"google api call takes {end-start:.2f} seconds")
-        global model
-        result = model.transcribe("speech.mp3")
-        # print(f"transcription: {end-start:.2f}s")
-        return result["text"]
-        # log(f"total: {c-a:.2f}s")
-
-
-
-        return value
+        if config["local_transcription"]:
+            global model
+            save_audio(audio)
+            result = model.transcribe("speech.mp3")
+            # print(f"transcription: {end-start:.2f}s")
+            return result["text"]
+        
+        else:
+            with contextlib.redirect_stdout(io.StringIO()):
+                result = r.recognize_google(audio)
+                return result
+            
     except sr.UnknownValueError as e:
         print("Oops! Didn't catch that")
         raise Exception("incomprehensible") from e
@@ -123,7 +122,7 @@ def recognize():
         try:
             print('attempting to record')
             audio = record()
-            save_audio(audio)
+            
             print('recording succeeded')
         except Exception as e:
             print("A recording error occurred:", e)

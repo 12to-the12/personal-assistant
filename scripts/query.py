@@ -16,7 +16,7 @@ else:
 
 dotenv_path = config["dotenv_path"]
 load_dotenv(dotenv_path)
-openai.api_key = os.getenv("OPENAI_APIKEY")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def query_completion(prompt):

@@ -1,4 +1,4 @@
-dotenv_path = "/home/logan/software-development/keys/.env"
+dotenv_path = ".env" #"/home/logan/software-development/keys/.env"
 # model = "gpt-3.5-turbo"
 # model = "gpt-4"
 # CHAT = true
@@ -25,3 +25,7 @@ rounds = 50
 
 
 recognition_model = "base.en"
+
+
+local_transcription = false
+# bundled_executable = true

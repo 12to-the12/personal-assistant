@@ -1,7 +1,8 @@
 # dictation
 
 dictation/
-
+unused-scripts/
+.env
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -23,7 +24,6 @@ lib/
 lib64/
 parts/
 sdist/
-var/
 wheels/
 pip-wheel-metadata/
 share/python-wheels/

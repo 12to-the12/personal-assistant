@@ -48,11 +48,14 @@ def signal_handler(signum, frame):
     if input_lock: return None
     input_lock = True
     while 1:
-        try: record()
+        try:
+            audio = record()
+            print('recording finished')
         except:
+            print('recording was not successful')
             input_lock = False
             return None
-        text = recognize_audio()
+        text = recognize_audio(audio)
         # text = recognize()
         print(f"you said: {text}")
         # print("how do I put this into words...")

@@ -9,7 +9,7 @@ import os
 import subprocess
 from query import query
 from voice_synth import synth
-from play import play
+from scripts.play import play
 from recognition import recognize, adjust_noise
 
 

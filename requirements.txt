@@ -6,5 +6,4 @@ python-dotenv==1.0.0
 toml==0.10.2
 SpeechRecognition==3.10.0
 pyaudio==0.2.13
-openai-whisper==4.5.0
-keyboard==0.13.5
+# openai-whisper
