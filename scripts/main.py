@@ -1,85 +1,82 @@
 print("startup")
 from spin_off import spin_off
-from recognition import adjust_noise, record, recognize
-from query import query
+from recognition import adjust_noise, record, recognize, recognize_audio
+from instruction_formation import instruction_to_command
+from commentary import give_commentary
+# from say import say
+from voice_synth import say
 import time
 import os
-import openai
-import json
-from voice_synth import synth
-import toml
-from play import play
+# from play import play
+import signal
 # startmp3 = play("start.mp3", asyncronous=True)
+input_lock = False
 
 
-with open('config.toml') as f:
-    config = toml.load(f)
-
-
-
-print("adjusting for noise...")
-adjust_noise()
-
-# startmp3.join()
-print("I'll wait here...")
-text = recognize()
-
-print(f"you said: {text}")
-print("how do I put this into words...")
-start_time = time.time()
-text = {"role": "user", "content": text}
-response = query(text)
-end_time = time.time()
-flavor, command = response
-print(f"speech: {flavor}")
-print(f"command: {command}")
-
-
-def log(msg, log_file='log.txt'):
-    with open(log_file, 'a') as f:
-        f.write(msg + '\n')
-    # print(msg)
-
-
-# def clear_terminal():
-#     os.system('cls' if os.name == 'nt' else 'clear')
 def command_validator(command):  # returns pass
     project_types = ["python", "rust", "java",
                      "website", "cpp", "bash", "assembly"]
     command = command.split()
     if len(command) != 3:
         # print(f"a proper command should have three arguments, not {len(command)}")
+        say("Sorry, I had some trouble knowing what you need, please specify a project language and name")
         return False
     if command[0] != "new-project":
         # print(f"a proper command should begin with new-project followed by a space, not {command[0]}")
+        say("Sorry, I had some trouble knowing what you need, please specify a project language and name")
         return False
     if command[1] not in project_types:
         # print(f"a proper command should use a valid project type, not {command[1]}")
+        message = f"Sorry, I'm not sure how to initialize {command[1]} projects, I've only been taught how to work with the following, "
+        message += ", ".join(project_types)
+        say(message)
         return False
     return True
 
 
-print("running command...")
-if command_validator(command):
-    os.system(command)
-else:
-    print('invalid command')
+# Write the server PID to a text file
+pid_file = "var/assistant.pid"
+with open(pid_file, 'w') as f:
+    f.write(str(os.getpid()))
 
-log("__________ entry __________")
-log(f"instruction: {text}")
-log(flavor)
-log(command)
-# print(f"model: {config["model"]}")
-# log(f"Tokens: \t{response.usage.total_tokens}")
-log(f"openai api call:   \t{end_time - start_time:.2f} seconds")
-log("")
+# Print the server PID for reference
+print("Server PID:", os.getpid())
 
-print(f"wow, that took: {end_time - start_time:.2f} seconds\n")
-print("how do I say this...")
+# Define a signal handler function to receive the signal
+def signal_handler(signum, frame):
+    global input_lock
+    if input_lock: return None
+    input_lock = True
+    while 1:
+        try: record()
+        except:
+            input_lock = False
+            return None
+        text = recognize_audio()
+        # text = recognize()
+        print(f"you said: {text}")
+        # print("how do I put this into words...")
+        command = instruction_to_command(text)
+        print(f"command: {command}")
+        if command_validator(command):
+            os.system(command)
+            give_commentary(command)
+            break
+        else:
+            print('invalid command')
+            pass
+    
+    input_lock = False
 
 
-spin_off(flavor)
-spin_off(synth(flavor))
+signal.signal(signal.SIGUSR1, signal_handler)
 
-# play("speech_synthesis.mp3")
-time.sleep(3)
+
+print("starting loop")
+while 1:
+    # signal.pause()
+    
+    if not input_lock:
+        print("adjusting for noise...")
+        adjust_noise()
+    time.sleep(10)

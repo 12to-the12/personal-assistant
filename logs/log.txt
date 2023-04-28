@@ -800,3 +800,90 @@ instruction: {'role': 'user', 'content': 'create a new web development project c
 new-project website hot-rod
 openai api call:   	1.16 seconds
 
+__________ entry __________
+instruction: new job project called Falmouth
+
+openai api call:   	0.47 seconds
+
+__________ entry __________
+instruction: Java project called fun with my
+new-project java fun-with-my
+openai api call:   	1.05 seconds
+
+__________ entry __________
+instruction: make me a new job project about learning Minecraft
+
+openai api call:   	0.52 seconds
+
+__________ entry __________
+instruction: make me a new Java project about modding Minecraft
+
+openai api call:   	0.62 seconds
+
+__________ entry __________
+instruction: new Minecraft modding project in Java
+new-project java minecraft-modding
+openai api call:   	0.53 seconds
+
+__________ entry __________
+instruction: new Minecraft modding project in Java
+new-project java minecraft-modding
+openai api call to project built:   	0.76 seconds
+
+__________ entry __________
+instruction: make me a new Minecraft modding project in Java
+new-project java minecraft-modding
+openai api call to project built:   	0.68 seconds
+
+__________ entry __________
+instruction: make me a new Minecraft modding project in Java
+new-project java minecraft-modding
+recognition api call to project built:   	1.36 seconds
+
+__________ entry __________
+instruction: make me a new python project called Learn Python
+new-project python learn-python
+recognition api call to project built:   	5.39 seconds
+
+__________ entry __________
+instruction: what can you do make me a new Java project called modding Minecraft
+new-project java modding-minecraft
+recognition api call to project built:   	1.59 seconds
+
+__________ entry __________
+instruction: just make make mini python projects
+new-project python mini-projects
+recognition api call to project built:   	5.51 seconds
+
+__________ entry __________
+instruction: make me a new Java project Minecraft
+new-project java minecraft
+recognition api call to project built:   	1.42 seconds
+
+__________ entry __________
+instruction: take me to Java project called file Strava
+new-project java file-strava
+recognition api call to project built:   	2.08 seconds
+
+__________ entry __________
+instruction: this is an audio test
+new-project audio test
+recognition api call to project built:   	1.57 seconds
+
+__________ entry __________
+instruction: this is an audio test
+new-project audio
+recognition api call to project built:   	1.38 seconds
+
+__________ entry __________
+instruction: create a new python project
+
+
+new-project python
+recognition api call to project built:   	1.69 seconds
+
+__________ entry __________
+instruction: create a new python project called signal hand
+new-project python signal-hand
+recognition api call to project built:   	5.71 seconds
+

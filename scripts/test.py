@@ -1,8 +1,8 @@
-from query import query
+from scripts.instruction_formation import instruction_to_command
 import time
 import toml
-with open('config.toml') as f:
-    config = toml.load(f)
+
+
 
 def command_validator(command):  # returns pass
     project_types = ["python", "rust", "java",
@@ -20,22 +20,30 @@ def command_validator(command):  # returns pass
     return True
 
 def log(msg, log_file='efficacy.txt'):
-    with open(log_file, 'a') as f:
+    with open("logs/"+log_file, 'a') as f:
         f.write(msg + '\n')
 
 if __name__ == "__main__":
-    # sentence = "set up a C plus plus project file for me, I going to learn how to write command line utilities"
-    sentence = "I'm learning python, set up a new repository for me"
-    instruction = {
-        "role": "instruction", "content": sentence}
+    with open('config.toml') as f:
+        config = toml.load(f)
+
+    
+    # instruction = "set up a C plus plus project file for me, I going to learn how to write command line utilities"
+    # instruction = "I'm learning python, set up a new repository for me"
+    instruction = "make me a new Java project about modding Minecraft"
+
+    # instruction = {
+    #     "role": "instruction", "content": sentence}
+
     rounds = config["rounds"]
+    # rounds = 1
     correct_count = 0
     start = time.time()
     for round in range(rounds):
-        speech, command = query(instruction)
+        response = instruction_to_command(instruction)
         # print(speech)
-        # print(command)
-        if command_validator(command):
+        print(response)
+        if command_validator(response):
             correct_count += 1
             print('valid')
         else:

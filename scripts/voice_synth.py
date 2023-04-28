@@ -30,7 +30,7 @@ def synth_static(text):
     play(audio)
 
 
-def synth(text, voice="Rachel"):  # streaming
+def say(text, voice="Rachel"):  # streaming
     audio_stream = generate(
         text=text,
         stream=True,
@@ -42,5 +42,5 @@ def synth(text, voice="Rachel"):  # streaming
 
 if __name__ == "__main__":
     print('start...')
-    synth_static("Our Father, which art in heaven, Hallowed be thy Name. Give us this day our daily bread. And forgive us our trespasses, As we forgive them that trespass against us.")
+    say("Our Father, which art in heaven, Hallowed be thy Name. Give us this day our daily bread. And forgive us our trespasses, As we forgive them that trespass against us.")
     # play(audio)

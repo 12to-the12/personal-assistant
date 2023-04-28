@@ -1,5 +1,10 @@
+elevenlabs==0.2.7
 openai==0.27.2
+pydub==0.25.1
 pyglet==2.0.5
 python-dotenv==1.0.0
-requests==2.28.2
 toml==0.10.2
+SpeechRecognition==3.10.0
+pyaudio==0.2.13
+openai-whisper==4.5.0
+keyboard==0.13.5

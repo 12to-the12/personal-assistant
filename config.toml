@@ -5,7 +5,7 @@ dotenv_path = "/home/logan/software-development/keys/.env"
 model = "text-curie-001"
 # model = "ada"
 max_tokens = 50
-temperature = 1  # 0 - 2
+temperature = 1 # 0 - 2
 
 # voice_id = "EXAVITQu4vr4xnSDxMaL"
 
@@ -22,3 +22,6 @@ rounds = 50
 # curie
 # babbage
 # ada
+
+
+recognition_model = "base.en"

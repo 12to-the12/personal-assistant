@@ -1,0 +1,172 @@
+__________ tiny.en __________
+model load: 2.38s
+transcription: 2.95s
+ This is an audio test.
+total: 5.33s
+__________ base.en __________
+model load: 2.52s
+transcription: 2.83s
+ This is an audio test.
+total: 5.35s
+
+__________ base.en __________
+model load: 1.48s
+transcription: 3.02s
+ This is an audio test.
+transcription: 0.29s
+ This is an audio test.
+transcription: 0.30s
+ This is an audio test.
+transcription: 0.31s
+ This is an audio test.
+transcription: 0.30s
+ This is an audio test.
+transcription: 0.30s
+ This is an audio test.
+transcription: 0.28s
+ This is an audio test.
+transcription: 0.27s
+ This is an audio test.
+transcription: 0.29s
+ This is an audio test.
+transcription: 0.28s
+ This is an audio test.
+
+__________ tiny.en __________
+model load: 1.24s
+transcription: 2.86s
+ This is an audio test.
+transcription: 0.25s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.25s
+ This is an audio test.
+transcription: 0.25s
+ This is an audio test.
+transcription: 0.22s
+ This is an audio test.
+transcription: 0.22s
+ This is an audio test.
+transcription: 0.22s
+ This is an audio test.
+transcription: 0.22s
+ This is an audio test.
+transcription: 0.22s
+ This is an audio test.
+
+__________ small.en __________
+model load: 108.24s
+transcription: 2.94s
+ This is an audio test.
+transcription: 0.40s
+ This is an audio test.
+transcription: 0.40s
+ This is an audio test.
+transcription: 0.39s
+ This is an audio test.
+transcription: 0.40s
+ This is an audio test.
+transcription: 0.41s
+ This is an audio test.
+transcription: 0.41s
+ This is an audio test.
+transcription: 0.43s
+ This is an audio test.
+transcription: 0.45s
+ This is an audio test.
+transcription: 0.45s
+ This is an audio test.
+
+__________ small.en __________
+model load: 3.30s
+transcription: 3.12s
+ This is an audio test.
+transcription: 0.39s
+ This is an audio test.
+transcription: 0.39s
+ This is an audio test.
+transcription: 0.39s
+ This is an audio test.
+transcription: 0.39s
+ This is an audio test.
+transcription: 0.39s
+ This is an audio test.
+transcription: 0.40s
+ This is an audio test.
+transcription: 0.42s
+ This is an audio test.
+transcription: 0.40s
+ This is an audio test.
+transcription: 0.40s
+ This is an audio test.
+
+__________ tiny.en __________
+model load: 2.22s
+transcription: 2.71s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.24s
+ This is an audio test.
+transcription: 0.24s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+
+__________ tiny.en __________
+model load: 2.24s
+transcription: 2.80s
+ This is an audio test.
+transcription: 0.21s
+ This is an audio test.
+transcription: 0.21s
+ This is an audio test.
+transcription: 0.22s
+ This is an audio test.
+transcription: 0.22s
+ This is an audio test.
+transcription: 0.22s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.26s
+ This is an audio test.
+transcription: 0.26s
+ This is an audio test.
+
+__________ tiny.en __________
+model load: 2.29s
+transcription: 2.78s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.24s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+transcription: 0.23s
+ This is an audio test.
+
