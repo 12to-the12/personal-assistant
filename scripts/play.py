@@ -15,7 +15,7 @@
 #     mixer.quit()
 
 import pyglet
-from spin_off import spin_off
+from scripts.spin_off import spin_off
 
 # def on_player_eos():
 #         pyglet.app.exit()

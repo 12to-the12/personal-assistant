@@ -1,10 +1,10 @@
 print("startup")
-from spin_off import spin_off
-from recognition import adjust_noise, record, recognize, recognize_audio
-from instruction_formation import instruction_to_command
-from commentary import give_commentary
+from scripts.spin_off import spin_off
+from scripts.recognition import adjust_noise, record, recognize, recognize_audio
+from scripts.instruction_formation import instruction_to_command
+from scripts.commentary import give_commentary
 # from say import say
-from voice_synth import say
+from scripts.voice_synth import say
 import time
 import os
 # from play import play

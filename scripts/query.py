@@ -3,7 +3,7 @@ import dotenv
 import os
 import openai
 from pathlib import Path
-from config import config
+from scripts.config import config
 
 
 

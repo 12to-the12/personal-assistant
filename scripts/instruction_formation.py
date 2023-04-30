@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 import dotenv
 import os
-from query import query_completion
+from scripts.query import query_completion
 from pathlib import Path
 
 

@@ -6,11 +6,11 @@ import os
 import contextlib
 import io
 import time
-from play import play
+from scripts.play import play
 # import pydub
 import time
 
-from config import config
+from scripts.config import config
 
 
 

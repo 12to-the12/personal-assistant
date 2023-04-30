@@ -1,10 +1,10 @@
 from dotenv import load_dotenv
 import dotenv
 import os
-from query import query_completion
+from scripts.query import query_completion
 from pathlib import Path
-from voice_synth import say
-from spin_off import spin_off
+from scripts.voice_synth import say
+from scripts.spin_off import spin_off
 
 
 

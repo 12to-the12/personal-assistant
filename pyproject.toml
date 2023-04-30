@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "personal-assistant"
+version = "0.1.0"
+description = ""
+authors = ["Logan Hillyer <shivastranded@proton.me>"]
+readme = "README.md"
+packages = [{include = "personal_assistant"}]
+
+[tool.poetry.scripts]
+myscript = "./main.py"
+
+[tool.poetry.dependencies]
+python = "3.9.16"
+elevenlabs = "^0.2.7"
+openai = "^0.27.5"
+pydub = "^0.25.1"
+pyglet = "^2.0.5"
+python-dotenv = "^1.0.0"
+toml = "^0.10.2"
+SpeechRecognition = "^3.10.0"
+PyAudio = "^0.2.13"
+openai-whisper = "^20230314"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
