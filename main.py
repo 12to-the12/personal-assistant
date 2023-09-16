@@ -1,3 +1,8 @@
+# this segment allows keypresses to actvate sessions
+
+# this is one of a number of different entry points for this project
+# it is intended to be monolithic, with all resources under one directory
+
 print("startup")
 from scripts.spin_off import spin_off
 from scripts.recognition import adjust_noise, record, recognize, recognize_audio
@@ -9,6 +14,7 @@ import time
 import os
 # from play import play
 import signal
+from scripts.quick_parse import quick_parse
 # startmp3 = play("start.mp3", asyncronous=True)
 input_lock = False
 
@@ -42,11 +48,15 @@ with open(pid_file, 'w') as f:
 # Print the server PID for reference
 print("Server PID:", os.getpid())
 
+
+
 # Define a signal handler function to receive the signal
+# runs on keypress
 def signal_handler(signum, frame):
     global input_lock
     if input_lock: return None
     input_lock = True
+
     while 1:
         try:
             audio = record()

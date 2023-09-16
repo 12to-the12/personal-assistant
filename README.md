@@ -1,4 +1,4 @@
-A glorious swiss army knife of a project
+# A glorious swiss army knife of a project
 
 
 
@@ -51,3 +51,19 @@ brew install portaudio
 pip install pyaudio
 ```
 in the virtual enviroment to get pyaudio working
+
+# End Points
+- keypress based session creation (requires daemon, whisper api call recommended to minimize resource usage)
+- cli, text to text ( all this does is expose a user friendly GPT agent with access to system resources )
+- speech to speech direct session ( original method, terminal shows what's being processes, speak to the machine, and be spoken to)
+- unadorned chat mode, direct access to GPT agent
+abilities
+# Desired Capabilities
+## tools to accomplish tasks
+- web search
+- write to files
+- delegate to python script
+## tasks
+- create project files
+- open applications
+- open bookmarks

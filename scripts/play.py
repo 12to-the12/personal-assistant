@@ -16,10 +16,14 @@
 
 import pyglet
 from scripts.spin_off import spin_off
+# this segment plays audio files
+# it is supposed to keep everything in the audio-files directory
+
 
 # def on_player_eos():
 #         pyglet.app.exit()
 def play_audio_file(audio_file):
+    audio_file = "audo-files" + audio_file
     sound = pyglet.media.load(audio_file, streaming=False)
     sound.play()
     

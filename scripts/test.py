@@ -1,3 +1,4 @@
+# tests how effective the command processor is at recognizing intent
 from scripts.instruction_formation import instruction_to_command
 import time
 import toml

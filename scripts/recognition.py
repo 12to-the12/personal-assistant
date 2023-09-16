@@ -1,4 +1,4 @@
-
+# this segment turns speech into text
 import speech_recognition as sr
 # import sys
 import os

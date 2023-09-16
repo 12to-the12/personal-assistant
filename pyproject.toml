@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "personal_assistant"}]
 
 [tool.poetry.scripts]
-myscript = "./main.py"
+main = "./main.py"
 
 [tool.poetry.dependencies]
 python = "3.9.16"
@@ -20,6 +20,13 @@ toml = "^0.10.2"
 SpeechRecognition = "^3.10.0"
 PyAudio = "^0.2.13"
 openai-whisper = "^20230314"
+spacy = "^3.5.2"
+langchain = "^0.0.172"
+google-search-results = "^2.4.2"
+wikipedia = "^1.4.0"
+streamlit = "^1.22.0"
+faiss-gpu = "^1.7.2"
+rich = "^13.3.5"
 
 
 [build-system]

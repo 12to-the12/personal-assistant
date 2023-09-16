@@ -3,7 +3,7 @@ import dotenv
 import os
 from scripts.query import query_completion
 from pathlib import Path
-
+from scripts.quick_parse import quick_parse
 
 
 # messages = [
@@ -47,7 +47,7 @@ response format: new-project <project_type> <project-name>
 valid response examples:
 [instruction]: create a new python project about learning python
 [response]:new-project python learning-python
-[instruction]: computer, make a new project. Name something like WASM fun, it's a rust project
+[instruction]: computer, make a new project. Name it something like WASM fun, it's a rust project
 [response]:new-project rust fun-with-WASM
 [instruction]: hey, system assistant, build me a new java project file, I want it to be called java beans
 [response]:new-project java java-beans
@@ -88,6 +88,8 @@ valid response examples:
 
 
 def instruction_to_command(instruction):
+    try: return quick_parse(instruction)
+    except: pass
     global header
     prompt = header+"\n[instruction]: "+instruction+"\n"+"[response]:"
     # print(prompt, end="")   
@@ -101,6 +103,7 @@ def instruction_to_command(instruction):
 
 
 if __name__ == "__main__":
-    instruction = "set up a c plus plus project file for me, I am going to learn how to write command line utilities"
+    instruction = \
+        "new python project called learning python"
     response = instruction_to_command(instruction)
-    print(f'<and then>{response}<cool right?>')
+    print(f'$ {response}')
