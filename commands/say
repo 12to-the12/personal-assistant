@@ -1,0 +1,29 @@
+#!/bin/bash
+query="$*"
+# all this does is pipes stdin to the "say" in the personal assistant project's directory, which then will call the voice_synth script
+# NOTE: cd ing into the directory is important, it makes sure the file paths are correct on the receiving end
+cd $AI_PROJECTS_DIR/personal-assistant
+echo entering
+pwd
+# sleep 1
+echo "query: $query"
+echo $query | ./say
+
+# cat - | ./say
+
+# process_input() {
+#     local input="$1"
+#     # Your processing logic here
+#     echo $input
+# }
+
+# main() {
+#     local input
+#     while IFS= read -r line; do
+#         input="$input$line"
+#     done
+
+#     process_input "$input"
+# }
+
+# main

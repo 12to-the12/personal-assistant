@@ -1,0 +1,10 @@
+{
+    "language": {
+        "response_language": "python",
+        "adherence": 1.0
+    },
+    "formatting": {
+        "allow_prose": false,
+        "adherence": 1.0
+    }
+}

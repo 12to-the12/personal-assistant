@@ -1,0 +1,34 @@
+{
+  "response_language": "python",
+  "current_date": "$date",
+  "python": {
+    "use_python_to_formalize_calculation": true,
+    "modules_available": [
+      "numpy",
+      "pandas",
+      "sympy",
+      "pint",
+      "humanize",
+      "arrow"
+    ],
+    "use_relevant_modules": true,
+    "execution_environment": "script",
+    "output_with_print": true,
+    "evaluate_code": false,
+    "show_output": false,
+    "prefer_single_block": true,
+
+    "avoid_prose": true,
+    "assume_modules_installed": true,
+    "prefer_modules": true
+
+  },
+  "response_style":{
+    "use_single_code_block": true,
+    "adherence": 1.0
+  },
+  "avoid_prose": true,
+  "use_code_blocks": true,
+  "date": "$date"
+
+}

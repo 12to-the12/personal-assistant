@@ -1,17 +1,82 @@
-dotenv_path = ".env" #"/home/logan/software-development/keys/.env"
-# model = "gpt-3.5-turbo"
-# model = "gpt-4"
+dotenv_path = ".env" #"/home/logan/software-development/keys/.env" 
+query_type = "chat"
+# chat_model = "gpt-4"
+chat_model = "gpt-4-1106-preview"
+completion_model = "gpt-3.5-turbo"
 # CHAT = true
-model = "text-curie-001"
+# model = "text-curie-001"
 # model = "ada"
 max_tokens = 50
 temperature = 1 # 0 - 2
 
-# voice_id = "EXAVITQu4vr4xnSDxMaL"
 
-# voice = "Paul Bettany"
+text_to_speech_source = "openai"
+# text_to_speech_source = "elevenlabs"
 
-voice = "Rachel"
+# see https://api.elevenlabs.io/docs
+
+
+# python script to get all the voices
+# from elevenlabs import voices
+# for voice in voices():
+#     print(voice.name)
+
+# for elevenlabs
+# Rachel
+# Clyde
+# Domi
+# Dave
+# Fin
+# Bella
+# Antoni
+# Thomas
+# Charlie
+# Emily
+# Elli
+# Callum
+# Patrick
+# Harry
+# Liam
+# Dorothy
+# Josh
+# Arnold
+# Charlotte
+# Matilda
+# Matthew
+# James
+# Joseph
+# Jeremy
+# Michael
+# Ethan
+# Gigi
+# Freya
+# Grace
+# Daniel
+# Serena
+# Adam
+# Nicole
+# Jessie
+# Ryan
+# Sam
+# Glinda
+# Giovanni
+# Mimi
+# for openai
+# Alloy
+# Echo
+# Fable
+# Onyx
+# Nova
+# Shimmer
+voice = "nova" # either elevenlabs or openai
+
+
+
+# openai:
+
+voice_model = "tts-1" # or tts-1-hd openai only
+# Mimi is nice too
+
 rounds = 50
 
 # davinci
@@ -25,7 +90,31 @@ rounds = 50
 
 
 recognition_model = "base.en"
+# see https://github.com/openai/whisper
+# options:
+# tiny      tiny.en
+# base      base.en   best option
+# small     small.en
+# medium    medium.en too big to run
+# large     NA        too big to run
 
 
-local_transcription = false
+local_transcription = true
 # bundled_executable = true
+
+# path to role used for chat system model
+role = "roles/interpreter.json"
+
+[context]
+# language = "Victorian"
+# language = "Gaeilge"
+# language = "en-us"
+# operating_system = "Fedora Linux 38"
+# shell = "zsh"
+# location = "Asia"
+# device = "G14 2021 gaming laptop"
+# [context.system_specs]
+# GPU = "Geforce RTX 3050 laptop with 4GB VRAM"
+# RAM = "24GB DDR4"
+# storage = "2TB SSH"
+# CPU = "AMD Ryzen™ 7 5800HS with Radeon™ Graphics x 16"

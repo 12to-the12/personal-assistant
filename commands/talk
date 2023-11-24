@@ -1,0 +1,7 @@
+#!/bin/bash
+query="$*"
+
+cd $PROJECTS_DIR/personal-assistant
+# echo "hello" >>tester.txt
+poetry run python chat.py $query | poetry run python say.py
+# ./chat.py $query

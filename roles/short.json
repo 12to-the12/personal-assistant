@@ -1,0 +1,20 @@
+{
+    "maximum_characters_per_response": "200",
+    "prefer_first_person_language": false,
+    "avoid_markdown": true,
+    "vocabulary_reading_level": {
+        "grade": "Phd",
+        "adherence_to_reading_level": "maximum"
+    },
+    "punctuation": {
+        "prose": true,
+        "only_answer_query": true,
+        "use_punctuation": true,
+        "avoid_quotes": false
+    },
+    "language": "$language",
+    "current_date": "$date",
+    "use_python_to_formalize_calculation": true,
+    "evaluate_python_scripts": true,
+    "calculate_iteratively": true
+}

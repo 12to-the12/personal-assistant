@@ -1,0 +1,50 @@
+#!/home/logan/software-development/projects/ai/personal-assistant/venv/bin/python
+print("<start>")
+import subprocess
+import sys
+import os
+
+def run_shellgpt_command(command):
+    # Run the ShellGPT command and return the output
+    # result = subprocess.run(['sgpt', '--code', command], stdout=subprocess.PIPE)
+    result = subprocess.run(['sgpt', command], stdout=subprocess.PIPE)
+
+    return result.stdout.decode('utf-8')
+
+def execute_python_code(code):
+    # Execute the Python code and return the output
+    try:
+        exec(code)
+    except Exception as e:
+        print(f"Error executing Python code: {e}")
+
+def extract_code_from_output(output):
+    # Extract code from the output using the triple backticks notation
+    code_blocks = output.split('```')
+    if len(code_blocks) >= 3:
+        # Assuming the code is in the second block
+        return code_blocks[1].strip()
+    return None
+
+def main():
+    while True:
+        # Get input from the user
+        user_input = input("Enter your command or 'exit' to quit: ")
+        if user_input == 'exit':
+            break
+
+        # Send the command to ShellGPT and get the output
+        shellgpt_output = run_shellgpt_command(user_input)
+        print("ShellGPT output:", shellgpt_output)
+
+        # Extract code from the output
+        code_to_execute = extract_code_from_output(shellgpt_output)
+        if code_to_execute:
+            print("Executing extracted code:")
+            execute_python_code(code_to_execute)
+        else:
+            print("No code block found to execute.")
+
+if __name__ == "__main__":
+    print("<main>")
+    main()

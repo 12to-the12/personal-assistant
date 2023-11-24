@@ -1,0 +1,12 @@
+#!/home/logan/software-development/projects/ai/personal-assistant/venv/bin/python
+# intermediary for the "say" in path and the voice_synth module
+# think of this script as the project handler
+from scripts.recognition import recognize, recognize_audio
+import speech_recognition as sr
+
+print("calling recognize")
+
+
+transcript = recognize()
+
+print( transcript )

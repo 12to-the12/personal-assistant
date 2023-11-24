@@ -1,0 +1,26 @@
+{
+    "maximum_characters_per_response": "120",
+    "brevity": 0.8,
+    "prefer_first_person_language": true,
+    "avoid_markdown": true,
+    "vocabulary_reading_level": {
+        "grade": "5th",
+        "adherence_to_reading_level": "maximum"
+    },
+    "punctuation": {
+        "prose": false,
+        "only_answer_query": true,
+        "use_punctuation": false,
+        "avoid_quotes": true
+    },
+    "sarcasm": 0.2,
+    "rudeness": 0.1,
+    "response_language": {
+        "language": "$language",
+        "adherence": 1.0
+    },
+    "current_date": "$date",
+    "specificity": 1.0,
+    "confidence": 0.5,
+    "allow_unsure": false
+}

@@ -1,17 +1,17 @@
 # this segment turns speech into text
-import speech_recognition as sr
+
 # import sys
-import os
 # import warnings
 import contextlib
-import io
-import time
-from scripts.play import play
+import os, time, logging, io
+
+
 # import pydub
-import time
+
+import speech_recognition as sr
 
 from scripts.config import config
-
+from scripts.play import play
 
 
 
@@ -19,8 +19,10 @@ if config["local_transcription"]:
     print('loading model...')
     model_name = config["recognition_model"]
     import whisper
+    # see https://github.com/openai/whisper for usage
     model = whisper.load_model(model_name)
     print('model loaded...')
+
 # # Define a filter that matches all warnings
 # warnings.filterwarnings('ignore', category=Warning)
 
@@ -30,24 +32,21 @@ if config["local_transcription"]:
 
 
 # Redirect all output to the null device
+
+
 os.close(2)
 os.open(os.devnull, os.O_RDWR)
 
 
 # # Disable
 # def blockPrint():
-#     sys.stdout = open(os.devnull, 'w')
+#     syquit()
 
-# # Restore
-# def enablePrint():
-#     sys.stdout = sys.__stdout__
- 
-
-r = sr.Recognizer()
 m = sr.Microphone()
-
+r = sr.Recognizer()
 
 def save_audio(audio_file):
+    """saves an """
     # once for the archive
     filename = f"dictation {time.time()}.mp3"
     with open("dictation/"+filename, "wb") as f:
@@ -66,20 +65,24 @@ def adjust_noise():
         with m as source:
             r.adjust_for_ambient_noise(source, duration=1)
         print(f"Set energy threshold to {r.energy_threshold:.0f}")
-    except:
+    except Exception as e:
+        print("An error occurred:", str(e))
         print(f"Waiting to adjust until audio recording stops")
 
 
 def record():
     print("Say something!")
-    play('listening.mp3', asyncronous=False)
+    play('audio-files/listening.mp3')
+    # start suppressing output here
     try:
         with m as source:
             audio = r.listen(source, timeout=5)
-    except: print("couldn't record audio")
+    except Exception as e:
+        print("An error occurred:", str(e))
+        printf("couldn't record audio")
     # save the audio data to a file
-
-    play("stopped-listening.mp3")
+    # stop suppressing output here
+    play("audio-files/stopped-listening.mp3")
     save_audio(audio)
 
     print("Got it! Now to recognize it...")
@@ -88,7 +91,9 @@ def record():
     
 
 
-def recognize_audio(audio=None):
+
+def recognize_audio(audio=None) -> str:
+    """not a duplicate function, this function transcribes an audio file"""
     try:
         if config["local_transcription"]:
             global model
@@ -117,13 +122,18 @@ def recognize_audio(audio=None):
         pass
 
 
+
+
 def recognize():
+    """records and transcribes audio"""
+    print("in recognize")
     while 1:
         try:
             print('attempting to record')
             audio = record()
             
             print('recording succeeded')
+
         except Exception as e:
             print("A recording error occurred:", e)
             continue
@@ -133,27 +143,10 @@ def recognize():
             print('audio recognition succeeded')
             break
         except Exception as e:
-            print("An audio recognition error occured:", e)
+            print("An audio recognition error occurred:", e)
             continue
     print("complete!")
 
     return text
 
 
-if __name__ == "__main__":
-    # adjust the noise once at the beginning of the session
-    print("A moment of silence, please...")
-    adjust_noise()
-
-    # start the recognition loop
-    text = recognize()
-    # audio = record()
-    # print('transcripting...')
-    # text = recognize_audio('xx')
-    # print('done')
-
-    print(f"You said: {text}")
-
-# if __name__ == "__main__":
-#     audio = pydub.AudioSegment.from_file("dictation 1682508402.834191.mp3", format="mp3")
-#     print(recognize_audio(audio))

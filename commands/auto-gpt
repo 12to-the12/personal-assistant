@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd ~/software-development/projects/Auto-GPT-0.2.2
+echo "entered"
+echo $PWD
+source ./venv/bin/activate
+./run.sh

@@ -1,0 +1,17 @@
+#!/home/logan/software-development/projects/ai/personal-assistant/venv/bin/python
+
+# intermediary for the "say" in path and the voice_synth module
+# think of this script as the project handler
+
+from scripts.voice_synth import say
+
+
+
+import sys
+
+input = sys.stdin.readlines()
+
+# print("Counted", len(input), "lines.")
+input = " ".join(input)
+print(f"{input}")
+say( input )

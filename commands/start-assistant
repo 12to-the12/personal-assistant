@@ -1,0 +1,6 @@
+#!/bin/bash
+gnome-terminal
+
+cd /home/logan/software-development/projects/personal-assistant
+# echo "hello" >>tester.txt
+./run.sh
